@@ -15,6 +15,7 @@
     <detail-bottom-bar @addToCart="addToCart"/>
     <back-top @click.native="backClick" v-show="isShowBacktop"></back-top>
     <!-- <toast :message="message" :show="show" /> -->
+    
   </div>
 </template>
 <script>
@@ -38,8 +39,6 @@ import {itemListenerMixin,backTopMixin} from "../../common/mixin.js"
 import {getDetail,Goods,Shop,GoodsParam,gerRecommend} from 'network/detail'
 
 import Toast from "components/common/toast/Toast"
-
-Toast
 export default {
   name:'Detail',
   components:{
